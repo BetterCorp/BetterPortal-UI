@@ -57,7 +57,7 @@ const items = computed<{
   active: boolean;
 }[]>(() => {
   const route = useRoute();
-  return (appConfig.state.value!.features as any).menu.map(x => {
+  return (appConfig.state.value!.features as any).menu.map((x: any) => {
     return {
       title: x.name,
       icon: x.icon,
