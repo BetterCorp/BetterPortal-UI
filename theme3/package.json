@@ -20,7 +20,7 @@
     "@capacitor/core": "^4.7.0",
     "@capacitor/ios": "^4.3.0",
     "@vuestic/ag-grid-theme": "^1.0.3",
-    "@vueuse/core": "^9.3.0",
+    "@vueuse/core": "^9.13.0",
     "ag-grid-community": "^28.2.0",
     "ag-grid-vue3": "^28.2.0",
     "pinia": "^2.0.21",
