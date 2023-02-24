@@ -6,7 +6,7 @@ on:
       - 'develop'
 
 jobs:
-  buildDevelop:
+  buildDevelop-theme3:
     runs-on: ubuntu-latest
 
     strategy:
@@ -24,25 +24,25 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
-        cache-dependency-path: web/package-lock.json
+        cache-dependency-path: theme3/package-lock.json
     - run: npm ci
-      working-directory: web
-    - name: Work out version
-      id: version
-      run: node ./buildChangelogUI.js
-    - name: output version
-      run: |
-        echo "Setting version too: ${{ steps.version.outputs.version }}";
-    - run: |
-        rm ./web/src/version.js;
-        echo "export default '${{ steps.version.outputs.version }}';" >> ./web/src/version.js
-    - run: npm run build
-      working-directory: web
+      working-directory: theme3
+    # - name: Work out version
+      # id: version
+      # run: node ./buildChangelogUI.js
+    # - name: output version
+      # run: |
+        # echo "Setting version too: ${{ steps.version.outputs.version }}";
+    # - run: |
+        # rm ./theme3/src/version.js;
+        # echo "export default '${{ steps.version.outputs.version }}';" >> ./web/src/version.js
+    # - run: npm run build
+      # working-directory: web
     
-    - name: Update site
-      uses: cloudflare/wrangler-action@2.0.0
-      with:
-        apiToken: ${{ secrets.CF_API_TOKEN }}
-        accountId: ${{ secrets.CF_ACCOUNT_ID }}
-        command: pages publish web/dist/output --project-name=betterportal-beta  --branch=${GITHUB_REF##*/}
+    # - name: Update site
+      # uses: cloudflare/wrangler-action@2.0.0
+      # with:
+        # apiToken: ${{ secrets.CF_API_TOKEN }}
+        # accountId: ${{ secrets.CF_ACCOUNT_ID }}
+        # command: pages publish web/dist/output --project-name=betterportal-beta  --branch=${GITHUB_REF##*/}
     ## - run: npm test

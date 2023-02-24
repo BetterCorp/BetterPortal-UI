@@ -1,7 +1,7 @@
 version: 2
 updates:
 - package-ecosystem: npm
-  directory: "/ui"
+  directory: "/theme3"
   target-branch: "develop"
   schedule:
     interval: monthly

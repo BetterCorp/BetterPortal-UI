@@ -14,7 +14,7 @@ on:
       - '**'
 
 jobs:
-  build:
+  build-theme3:
     runs-on: ubuntu-latest
 
     strategy:
@@ -29,9 +29,9 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
-        cache-dependency-path: web/package-lock.json
+        cache-dependency-path: theme3/package-lock.json
     - run: npm ci
-      working-directory: web
+      working-directory: theme3
     - run: npm run build
-      working-directory: web
+      working-directory: theme3
     # - run: npm test
