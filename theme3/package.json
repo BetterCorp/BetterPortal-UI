@@ -33,7 +33,7 @@
     "vuestic-ui": "^1.4.10"
   },
   "devDependencies": {
-    "@capacitor/cli": "^4.3.0",
+    "@capacitor/cli": "^4.7.0",
     "@rushstack/eslint-patch": "^1.1.4",
     "@types/jsdom": "^20.0.0",
     "@types/node": "^18.14.1",
