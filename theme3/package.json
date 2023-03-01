@@ -23,7 +23,7 @@
     "@vueuse/core": "^9.13.0",
     "ag-grid-community": "^29.1.0",
     "ag-grid-vue3": "^29.1.0",
-    "pinia": "^2.0.21",
+    "pinia": "^2.0.32",
     "sass": "^1.55.0",
     "uuid": "^9.0.0",
     "vfonts": "^0.0.3",
