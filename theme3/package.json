@@ -19,7 +19,7 @@
     "@capacitor/android": "^4.3.0",
     "@capacitor/core": "^4.7.0",
     "@capacitor/ios": "^4.3.0",
-    "@vuestic/ag-grid-theme": "^1.0.3",
+    "@vuestic/ag-grid-theme": "^1.1.4",
     "@vueuse/core": "^9.13.0",
     "ag-grid-community": "^29.1.0",
     "ag-grid-vue3": "^29.1.0",
