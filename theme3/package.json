@@ -15,7 +15,7 @@
   },
   "dependencies": {
     "@bettercorp/betterportal-sdk": "^1.1.19",
-    "@bettercorp/tools": "^2.1.24",
+    "@bettercorp/tools": "^2.1.30",
     "@capacitor/android": "^4.3.0",
     "@capacitor/core": "^4.7.0",
     "@capacitor/ios": "^4.3.0",
