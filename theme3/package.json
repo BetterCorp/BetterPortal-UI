@@ -36,7 +36,7 @@
     "@capacitor/cli": "^4.3.0",
     "@rushstack/eslint-patch": "^1.1.4",
     "@types/jsdom": "^20.0.0",
-    "@types/node": "^18.14.1",
+    "@types/node": "^18.14.2",
     "@types/uuid": "^8.3.4",
     "@vitejs/plugin-vue": "^3.0.3",
     "@vitejs/plugin-vue-jsx": "^2.0.1",
